@@ -9,6 +9,9 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 import ArticleIcon from '@mui/icons-material/Article';
 import Box from '@mui/material/Box';
 
+
+
+
 const theme = createTheme({
   palette: {
     primary: {
@@ -45,7 +48,7 @@ function App() {
         display: 'flex',
         justifyContent: 'space-between'
       }}>
-      <Typography variant="h3" color="secondary" align="left">Web Developer</Typography>
+      <Typography variant="h3" color="secondary" align="left">Software Developer</Typography>
       <ArticleIcon color="secondary" fontSize="large" label="hi"sx={{
         display: 'flex',
         justifyContent: 'flex-end',
@@ -69,9 +72,9 @@ function App() {
       
       <hr></hr>
       
-      <Typography variant="body1" color="primary" paragraph="true" align="left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, fugiat omnis enim tempora necessitatibus sapiente iste non corporis temporibus, earum esse optio ullam obcaecati quam, mollitia minus suscipit. Quidem facilis perferendis vel eaque, nostrum illo, nulla distinctio iusto cupiditate maxime molestiae debitis dignissimos numquam. Pariatur, reiciendis fugiat sed quidem vitae laudantium tenetur nobis commodi est, voluptas autem eum distinctio? Obcaecati sit labore perspiciatis deserunt. Molestias, omnis quo. Quo quasi placeat iure. Quam, qui. Nobis sapiente odit neque atque. Dolorem, quia numquam exercitationem, tenetur recusandae repellat autem in fugit vero id, consequuntur consequatur sequi dolores. Assumenda sed fuga nostrum in laborum!
+      <Typography variant="body1" color="primary" paragraph={true} align="left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, fugiat omnis enim tempora necessitatibus sapiente iste non corporis temporibus, earum esse optio ullam obcaecati quam, mollitia minus suscipit. Quidem facilis perferendis vel eaque, nostrum illo, nulla distinctio iusto cupiditate maxime molestiae debitis dignissimos numquam. Pariatur, reiciendis fugiat sed quidem vitae laudantium tenetur nobis commodi est, voluptas autem eum distinctio? Obcaecati sit labore perspiciatis deserunt. Molestias, omnis quo. Quo quasi placeat iure. Quam, qui. Nobis sapiente odit neque atque. Dolorem, quia numquam exercitationem, tenetur recusandae repellat autem in fugit vero id, consequuntur consequatur sequi dolores. Assumenda sed fuga nostrum in laborum!
       </Typography>
-      <Typography variant="body1" color="primary" paragraph="true" align="left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, fugiat omnis enim tempora necessitatibus sapiente iste non corporis temporibus, earum esse optio ullam obcaecati quam, mollitia minus suscipit. Quidem facilis perferendis vel eaque, nostrum illo, nulla distinctio iusto cupiditate maxime molestiae debitis dignissimos numquam. Pariatur, reiciendis fugiat sed quidem vitae laudantium tenetur nobis commodi est, voluptas autem eum distinctio? Obcaecati sit labore perspiciatis deserunt. Molestias, omnis quo. Quo quasi placeat iure. Quam, qui. Nobis sapiente odit neque atque. Dolorem, quia numquam exercitationem, tenetur recusandae repellat autem in fugit vero id, consequuntur consequatur sequi dolores. Assumenda sed fuga nostrum in laborum!
+      <Typography variant="body1" color="primary" paragraph={true} align="left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, fugiat omnis enim tempora necessitatibus sapiente iste non corporis temporibus, earum esse optio ullam obcaecati quam, mollitia minus suscipit. Quidem facilis perferendis vel eaque, nostrum illo, nulla distinctio iusto cupiditate maxime molestiae debitis dignissimos numquam. Pariatur, reiciendis fugiat sed quidem vitae laudantium tenetur nobis commodi est, voluptas autem eum distinctio? Obcaecati sit labore perspiciatis deserunt. Molestias, omnis quo. Quo quasi placeat iure. Quam, qui. Nobis sapiente odit neque atque. Dolorem, quia numquam exercitationem, tenetur recusandae repellat autem in fugit vero id, consequuntur consequatur sequi dolores. Assumenda sed fuga nostrum in laborum!
       </Typography>
         
       </header>
