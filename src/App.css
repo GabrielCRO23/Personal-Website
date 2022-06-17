@@ -18,8 +18,20 @@ body {
   }
 }
 
+button {
+  cursor: pointer !important;
+}
 
 
+.day {
+  
+}
+
+.active {
+  background-color: teal !important;
+  width: 400px;
+  color: white !important;
+}
 
 
 .App-header {
