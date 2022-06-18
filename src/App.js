@@ -17,8 +17,11 @@ import { styled } from '@mui/system';
 
 const Offset = styled('div')(({ theme }) => theme.mixins.toolbar);
 
+//let innerTheme = createTheme();
+//
 
-const theme = createTheme({
+let theme = createTheme({
+  
   palette: {
     primary: {
       main: '#35342f',
@@ -28,9 +31,11 @@ const theme = createTheme({
     },
   },
 });
+theme = responsiveFontSizes(theme);
 
-let theme2 = createTheme();
-theme2 = responsiveFontSizes(theme2);
+
+
+
 
 
 
@@ -50,20 +55,23 @@ function App() {
 
     
     <Container maxWidth="lg">
-    <ThemeProvider theme={theme2}>
-    <ThemeProvider theme={theme}>
+     
+      <ThemeProvider theme={theme}>
+      
     
     <div className="App">
+      
 
-    <AppBar position="fixed" sx={{backgroundColor: "#e1e0dd", display: 'flex', flexDirection: 'row', justifyContent: { md: "flex-end", xs: "center"} }}>
+    <AppBar position="fixed" sx={{ backgroundColor: "#e1e0dd", display: 'flex', flexDirection: 'row', justifyContent: { md: "flex-end", xs: "center"} }}>
         <Toolbar variant="dense">
 
       {
                   buttons.map(button => (
                     <Button
                       href={"#" + button.text.toLowerCase()}
+                      
                       onClick={() => setChosen(button.id)}
-                      sx= {{ backgroundColor: button.id === chosen? 'white' : 'primary', color: button.id === chosen? 'primary' : 'primary', cursor: 'pinter',}}
+                      sx= {{ backgroundColor: button.id === chosen ? 'white' : "null"}}
                       key={button.id}
                     >
                       {button.text}
@@ -80,8 +88,10 @@ function App() {
         display: 'flex',
         flexDirection: 'column',
       }}>
+
+
       
-      <Typography variant="h2" color="primary" align="left">Gabriel Hrastovic</Typography>
+      <Typography variant="h2" color="primary" align="left" sx={{}}>Gabriel Hrastovic</Typography>
       <Box sx={{
         display: 'flex',
         justifyContent: 'space-between'
@@ -118,7 +128,6 @@ function App() {
       </Box>
       </header>
     </div>
-    </ThemeProvider>
     </ThemeProvider>
     </Container>
   );
