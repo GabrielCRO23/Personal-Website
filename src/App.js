@@ -1,17 +1,22 @@
 import { useState } from 'react'
 
 import './App.css';
+import gabriel from './scaledgabriel2.jpg'
+
 import { ThemeProvider, createTheme, responsiveFontSizes} from '@mui/material/styles';
 
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button'
 import Container from '@mui/material/Container'
-
+import Grid from '@mui/material/Grid';
 import ArticleIcon from '@mui/icons-material/Article';
 import Box from '@mui/material/Box';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import { styled } from '@mui/system';
+import Drawer from '@mui/material/Drawer';
+
+
 
 
 
@@ -51,15 +56,20 @@ function App() {
    
 
     
-    <Container maxWidth="lg">
-     
-      <ThemeProvider theme={theme}>
+    
       
     
     <div className="App">
       
+      
+      
+      <Container maxWidth="lg">
+     
+     <ThemeProvider theme={theme}>
 
-    <AppBar position="fixed" sx={{ width: {md: "0px"}, boxShadow: {md: "none"}, backgroundColor: "#e1e0dd", display: 'flex', flexDirection: 'row', justifyContent: { md: "flex-end", xs: "center"} }}>
+    <AppBar position="fixed" sx={{  backgroundColor: "#e1e0dd", display: 'flex', flexDirection: 'row', justifyContent: { md: "flex-end", xs: "center"} }}>
+  
+        
         <Toolbar variant="dense">
 
       {
@@ -81,52 +91,35 @@ function App() {
       </AppBar>
       <Offset />
       <header className="App-header">
-      <Box sx={{
-        display: 'flex',
-        flexDirection: 'column',
-      }}>
+
+      
+
+      
 
 
+     
+      
       
       <Typography variant="h2" color="primary" align="left" sx={{}}>Gabriel Hrastovic</Typography>
-      <Box sx={{
-        display: 'flex',
-        justifyContent: 'space-between'
-      }}>
       <Typography variant="h3" color="primary.dark" align="left">Programmer</Typography>
       
-      </Box>
       
       
-      <Box sx={{
-        display: 'flex',
-      }}>
-                
-
-
-
-
-
-
-
-
-      </Box>
       
-      </Box>
       
       
       <hr></hr>
       
-      <Box>
-      <Typography sx={{}}variant="body1" color="primary" paragraph={true} align="left">I am a Croatian-American dual citizen and I have lived all around the world. I'm looking for a team or company to work with where I can continue learning the most modern web development practices, and somewhere where I can contribute my creativity and extensive knowledge of several European, American, and eastern Asian cultures and languages. I am particularly interested in contributing towards localization, frontend UI implementation, and with some more practice - the backend. I'm completely open to learning any language and technology, although up to this point my focus has been on vanilla JavaScript and React.
+      
+      <Typography sx={{}}variant="body1" color="primary" paragraph={true} align="left">I am a Croatian-American and I have lived all around the world. I'm looking for a team or company to work with where I can continue learning the most modern web development practices, and somewhere where I can contribute my creativity and extensive knowledge of several European, American, and eastern Asian cultures and languages. I am particularly interested in contributing towards localization, frontend UI implementation, and with some more practice - the backend. I'm completely open to learning any language and technology, although up to this point my focus has been on vanilla JavaScript and React.
       </Typography>
       <Typography variant="body1" color="primary" paragraph={true} align="left">I've spent a great deal of my life on the computer, mainly creating comedic content with video games and also playing them professionally. I moved to Seoul, South Korea when I was 18 years old where I ran my own business with livestreaming and creating content for platforms like YouTube and Twitch. The past few years, my interests have changed and I began learning programming in order to do it as a career. Outside of programming, physical fitness has become my priority, weightlifting and endurance training. I'm also a big fan of punk rock and electronic music.
       </Typography>
-      </Box>
       </header>
-    </div>
+    
     </ThemeProvider>
     </Container>
+    </div>
   );
 }
 
