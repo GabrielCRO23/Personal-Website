@@ -25,6 +25,7 @@ let theme = createTheme({
   palette: {
     primary: {
       main: '#35342f',
+      dark: '#000000',
     },
     secondary: {
       main: '#37bbe4',
@@ -32,10 +33,6 @@ let theme = createTheme({
   },
 });
 theme = responsiveFontSizes(theme);
-
-
-
-
 
 
 
@@ -62,7 +59,7 @@ function App() {
     <div className="App">
       
 
-    <AppBar position="fixed" sx={{ backgroundColor: "#e1e0dd", display: 'flex', flexDirection: 'row', justifyContent: { md: "flex-end", xs: "center"} }}>
+    <AppBar position="fixed" sx={{ width: {md: "0px"}, boxShadow: {md: "none"}, backgroundColor: "#e1e0dd", display: 'flex', flexDirection: 'row', justifyContent: { md: "flex-end", xs: "center"} }}>
         <Toolbar variant="dense">
 
       {
@@ -96,7 +93,7 @@ function App() {
         display: 'flex',
         justifyContent: 'space-between'
       }}>
-      <Typography variant="h3" color="secondary" align="left">Programmer</Typography>
+      <Typography variant="h3" color="primary.dark" align="left">Programmer</Typography>
       
       </Box>
       
@@ -121,9 +118,9 @@ function App() {
       <hr></hr>
       
       <Box>
-      <Typography sx={{}}variant="body1" color="primary" paragraph={true} align="left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, fugiat omnis enim tempora necessitatibus sapiente iste non corporis temporibus, earum esse optio ullam obcaecati quam, mollitia minus suscipit. Quidem facilis perferendis vel eaque, nostrum illo, nulla distinctio iusto cupiditate maxime molestiae debitis dignissimos numquam. Pariatur, reiciendis fugiat sed quidem vitae laudantium tenetur nobis commodi est, voluptas autem eum distinctio? Obcaecati sit labore perspiciatis deserunt. Molestias, omnis quo. Quo quasi placeat iure. Quam, qui. Nobis sapiente odit neque atque. Dolorem, quia numquam exercitationem, tenetur recusandae repellat autem in fugit vero id, consequuntur consequatur sequi dolores. Assumenda sed fuga nostrum in laborum!
+      <Typography sx={{}}variant="body1" color="primary" paragraph={true} align="left">I am a Croatian-American dual citizen and I have lived all around the world. I'm looking for a team or company to work with where I can continue learning the most modern web development practices, and somewhere where I can contribute my creativity and extensive knowledge of several European, American, and eastern Asian cultures and languages. I am particularly interested in contributing towards localization, frontend UI implementation, and with some more practice - the backend. I'm completely open to learning any language and technology, although up to this point my focus has been on vanilla JavaScript and React.
       </Typography>
-      <Typography variant="body1" color="primary" paragraph={true} align="left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, fugiat omnis enim tempora necessitatibus sapiente iste non corporis temporibus, earum esse optio ullam obcaecati quam, mollitia minus suscipit. Quidem facilis perferendis vel eaque, nostrum illo, nulla distinctio iusto cupiditate maxime molestiae debitis dignissimos numquam. Pariatur, reiciendis fugiat sed quidem vitae laudantium tenetur nobis commodi est, voluptas autem eum distinctio? Obcaecati sit labore perspiciatis deserunt. Molestias, omnis quo. Quo quasi placeat iure. Quam, qui. Nobis sapiente odit neque atque. Dolorem, quia numquam exercitationem, tenetur recusandae repellat autem in fugit vero id, consequuntur consequatur sequi dolores. Assumenda sed fuga nostrum in laborum!
+      <Typography variant="body1" color="primary" paragraph={true} align="left">I've spent a great deal of my life on the computer, mainly creating comedic content with video games and also playing them professionally. I moved to Seoul, South Korea when I was 18 years old where I ran my own business with livestreaming and creating content for platforms like YouTube and Twitch. The past few years, my interests have changed and I began learning programming in order to do it as a career. Outside of programming, physical fitness has become my priority, weightlifting and endurance training. I'm also a big fan of punk rock and electronic music.
       </Typography>
       </Box>
       </header>
