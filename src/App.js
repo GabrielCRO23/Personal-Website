@@ -110,11 +110,15 @@ function App() {
       
       <hr></hr>
       
-      
-      <Typography sx={{}}variant="body1" color="primary" paragraph={true} align="left">I am a Croatian-American and I have lived all around the world. I'm looking for a team or company to work with where I can continue learning the most modern web development practices, and somewhere where I can contribute my creativity and knowledge of several European, American, and eastern Asian cultures and languages. I am particularly interested in contributing towards localization, frontend UI implementation, and with some more practice - the backend. I'm completely open to learning any language and technology, although up to this point my focus has been on vanilla JavaScript and React.
+      <Box sx={{ marginTop: '15%'}}>
+      <Typography variant="body1" color="primary" paragraph={true} align="left">I am Croatian-American and I have lived all around the world. I'm looking for a team or company to work with where I can continue learning the most modern web development practices, and where I can contribute my creativity and knowledge of European, American, and eastern Asian cultures and languages. I am particularly interested in contributing towards localization, frontend UI implementation, and with some more practice - the backend. I'm completely open to learning any language and technology, although up to this point my focus has been on vanilla JavaScript and React.
       </Typography>
       <Typography variant="body1" color="primary" paragraph={true} align="left">I've spent a great deal of my life on the computer, mainly creating comedic content with video games and also playing them professionally. I moved to Seoul, South Korea when I was 18 years old where I ran my own business with livestreaming and creating content for platforms like YouTube and Twitch. The past few years, my interests have changed and I began learning programming in order to do it as a career. Outside of programming, physical fitness has become my priority, weightlifting and endurance training. I'm also a big fan of punk rock and electronic music.
       </Typography>
+      <Box sx={{position: 'relative', display: 'flex', justifyContent: 'center', marginBottom: '2rem'}}>
+      <Button >View Resume</Button>
+      </Box>
+      </Box>
       </header>
     
     </ThemeProvider>
